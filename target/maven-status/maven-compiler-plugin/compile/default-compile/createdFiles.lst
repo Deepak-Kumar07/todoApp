@@ -1,5 +1,0 @@
-com/example/todoapp/model/Task.class
-com/example/todoapp/controller/TaskController.class
-com/example/todoapp/TodoAppApplication.class
-com/example/todoapp/repository/TaskRepository.class
-com/example/todoapp/controller/HomeController.class

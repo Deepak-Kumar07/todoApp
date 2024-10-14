@@ -1,0 +1,5 @@
+/workspaces/kubernetes/todoapp1/todoapp/src/main/java/com/example/todoapp/model/Task.java
+/workspaces/kubernetes/todoapp1/todoapp/src/main/java/com/example/todoapp/controller/HomeController.java
+/workspaces/kubernetes/todoapp1/todoapp/src/main/java/com/example/todoapp/controller/TaskController.java
+/workspaces/kubernetes/todoapp1/todoapp/src/main/java/com/example/todoapp/TodoAppApplication.java
+/workspaces/kubernetes/todoapp1/todoapp/src/main/java/com/example/todoapp/repository/TaskRepository.java

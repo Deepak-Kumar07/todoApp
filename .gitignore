@@ -1,1 +1,6 @@
+# Ignore target directory, typically used for build artifacts
 /target/*
+
+# Ignore .env files, which often contain sensitive environment variables
+.env.app
+.env.db

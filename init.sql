@@ -2,7 +2,6 @@ CREATE DATABASE IF NOT EXISTS todo_app;
 
 USE todo_app;
 
-CREATE USER 'todouser'@'%' IDENTIFIED BY 'todo@12345';
 GRANT ALL PRIVILEGES ON todo_app.* TO 'todouser'@'%';
 FLUSH PRIVILEGES;
 

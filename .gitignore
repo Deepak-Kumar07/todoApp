@@ -4,4 +4,4 @@
 # Ignore .env files, which often contain sensitive environment variables
 .env.app
 .env.db
-kubernetes/secret.yaml
+kubernetes/*/secret.yaml

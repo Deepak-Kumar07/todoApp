@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: todo-app
-          image: dekumar09/todoapp:v1
+          image: dekumar09/todoapp:v1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

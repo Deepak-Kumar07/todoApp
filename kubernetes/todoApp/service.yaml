@@ -6,7 +6,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    name: todo-app
+    app: todo-app
   ports:
     - name: todo-app
       port: 8080

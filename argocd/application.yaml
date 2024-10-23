@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1aplpha1
+kind: AppProject
+metadata:
+  name: todoproject
+  namespace: argocd
+spec:
+  project: todo-project
+  source:
+    repoURL: git@github.com:Deepak-Kumar07/todoApp.git
+    target: main
+    path: kubernetes
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: prod

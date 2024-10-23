@@ -5,3 +5,4 @@
 .env.app
 .env.db
 kubernetes/*/secret.yaml
+argocd/secret.yaml

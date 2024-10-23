@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: todo-project
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  discription: This is for to-do project
+  sourceRepos:
+    - https://github.com/Deepak-Kumar07/todoApp.git
+  destinations:
+    - namespace: prod
+      server: 
+  clusterResourceWhitelist:
+    - group: ''
+      kind: Namespace
+    - group: 'rbac.authorization.k8s.io'
+      kind: ClusterRole
+    - group: 'rbac.authorization.k8s.io'
+      kind: ClusterRoleBinding
+  namespaceResourceWhitelist:
+    - group: "*"
+      kind: "*"
+  roles:
+    - name:
+      description:
+      policies:
+      groups:
+    - name:
+      description:
+      policies:
+      groups:

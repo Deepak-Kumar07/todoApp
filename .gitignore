@@ -5,3 +5,4 @@
 .env.app
 .env.db
 argocd/secret.yaml
+aws-auth-cm.yaml

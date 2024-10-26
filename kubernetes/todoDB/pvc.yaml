@@ -9,4 +9,4 @@ spec:
   resources:
     requests:
       storage: 2Gi
-  storageClassName: todo-db_data
+  storageClassName: todo-db-data

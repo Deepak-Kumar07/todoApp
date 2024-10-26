@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata: 
+  name: todo-app
+  namespace: argocd
+spec:
+  generators:
+    - list:
+        elements:
+          - name: todo-app
+            path: todoApp
+            envtype: prod
+
+          - name: todo-db
+            path: todoDB
+            envtype: prod
+
+  template:
+    metadata:
+      name: '{{name}}'
+      namespace: argocd
+      labels:
+        env: '{{envtype}}'
+    spec:
+      project: default
+      source:
+        repoURL: git@github.com:Deepak-Kumar07/todoApp.git
+        targetRevision: main
+        path: kubernetes/{{path}}
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{envtype}}'

@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       name: todo-db
-  replicas: 1
+  replicas: 3
   template:
     metadata:
       labels:

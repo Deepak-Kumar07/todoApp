@@ -4,7 +4,7 @@ metadata:
   name: todo-db-pv
 spec:
   capacity:
-    storage: 2Gi
+    storage: 10Gi
   accessModes:
     - ReadWriteOnce
   awsElasticBlockStore:

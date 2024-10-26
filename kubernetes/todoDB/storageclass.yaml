@@ -3,7 +3,7 @@ kind: StorageClass
 metadata:
   name: todo-db-data
 parameters:
-  type: gp3
+  type: gp2
   fsType: ext4
 provisioner: ebs.csi.aws.com
 reclaimPolicy: Delete
